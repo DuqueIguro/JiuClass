@@ -7,4 +7,6 @@ Projeto de LDS
 
 <p>
   ◆ O codigo foi adicionado ao GitHub. <br />
+  ◆ Foi criado as paginas e pastas base. <br />
+  ◆ Foi as imagens usadas no projeto. <br />
 </p>
