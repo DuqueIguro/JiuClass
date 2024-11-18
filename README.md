@@ -10,3 +10,11 @@ Projeto de LDS
   ◆ Foi criado as paginas e pastas base. <br />
   ◆ Foi as imagens usadas no projeto. <br />
 </p>
+
+### Versão α-0.1.1 (18/11/2024)
+
+<p>
+  ◆ Tela inicial parcialmente concluida. <br />
+  ◆ Correção de Bugs. <br />
+  ◆ Tela de login iniciada. <br />
+</p>

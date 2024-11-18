@@ -1,8 +1,18 @@
+/* Funções universais*/
 * {
     margin: 0;
     padding: 0;
-  }
+    box-sizing: border-box;
+}
 
+/* Corpo */
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* NavBar*/
 #nav {
     background-color: #0B9504;
     height: 60px;
@@ -16,14 +26,85 @@
 
 #menu {
 
-   position: absolute;
-   right: 10px;
-   top: 2px;
-    
+    position: absolute;
+    right: 10px;
+    top: 2px;
+
+}
+
+.menu-icon {
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
 }
 
 #nav h1 {
     color: white;
     font-family: sans-serif;
     align-content: center;
+}
+
+.main-container {
+    text-align: center;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+/* Citação */
+.quote {
+    font-style: italic;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* Div de aviso */
+.sem-sala {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 650px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+
+.t-sem-sal {
+
+    vertical-align: middle;
+
+}
+
+.sem-sala h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sem-sala p {
+    font-size: 20px;
+    color: #666;
+    vertical-align: bottom;
+    text-align: center;
+
+}
+
+/* Botão de adicionar */
+.add-button {
+    background-color: #f44;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    font-size: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
