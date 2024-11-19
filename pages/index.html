@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='..\style\style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='..\style\navbar.css'>
-    <script src='main.js'></script>
+    <script src='..\scripts\main.js'></script>
 </head>
 <body>
 
@@ -23,25 +23,32 @@
 
     </header>
 
-    <main class="main-container">
-        <blockquote class="quote">
-          “Uma alma sem respeito é uma morada em ruínas. <br>
-          Deve ser demolida para construir uma nova.”
-        </blockquote>
-    
-        <div class="sem-sala">
-            <h3>Você ainda não possui salas criadas</h3>
+  <main class="main-container">
+    <blockquote class="quote">
+        “Uma alma sem respeito é uma morada em ruínas. <br>
+        Deve ser demolida para construir uma nova.”
+    </blockquote>
 
-            <div class="t-sem-sala">
-
-                <p>Clique no “+” no canto inferior direito <br> para criar uma sala</p>
-
-            </div>
-          
+    <div class="sem-sala">
+        <h3>Você ainda não possui salas criadas</h3>
+        <div class="t-sem-sala">
+            <p>Clique no “+” no canto inferior direito <br> para criar uma sala</p>
         </div>
-    
-        <button class="add-button">+</button>
-      </main>
+    </div>
+
+    <button class="add-button" onclick="openModal()">+</button>
+
+    <!-- Modal para confirmação -->
+    <div id="create-room-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>DESEJA CRIAR UMA SALA?</h3>
+            <div class="modal-buttons">
+                <button class="btn-sim" onclick="confirmCreation()">SIM</button>
+                <button class="btn-nao" onclick="closeModal()">NÃO</button>
+            </div>
+        </div>
+    </div>
+</main>
     
 </body>
 </html>

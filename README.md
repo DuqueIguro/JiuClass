@@ -36,3 +36,12 @@ Projeto de LDS
     ◆ Adição de uma pasta de scripts para armazenar os arquivos em JS. <br />
     ◆ Estilizações do Botão de (+), dentre as estilizações uma animação de urgencia, e um aumento de tamanho com hover. <br />
 </p>
+
+### Versão α-0.3.0 (19/11/2024)
+
+<p>
+  ◆ Banco de dados iniciado. <br />
+  ◆ Tela de login visualmente concluida. <br />
+  ◆ Iniciado a progamação de funcionalidades da tela inical. <br />
+  ◆ Criação de muitos Bugs a corrigir referente ao JS. <br />
+
