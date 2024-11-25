@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JiuClass</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='..\style\criarconta.css'>
+    <script src='..\scripts\main.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo">
+        </div>
+        <h2>Criar Conta</h2>
+        <form action="/criar-conta" method="post">
+            <div class="form-group">
+                <input type="text" name="nome" placeholder="Insira seu nome completo..." required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Insira seu e-mail..." required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="senha" placeholder="Insira sua senha..." required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="confirmar_senha" placeholder="Confirme sua senha..." required>
+            </div>
+            <button type="submit" class="btn">Criar Conta</button>
+        </form>
+        <a href="login.html" class="link-voltar">Voltar para Login</a>
+    </div>
+</body>
+
+</html>
