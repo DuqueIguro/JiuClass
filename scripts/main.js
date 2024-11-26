@@ -19,3 +19,37 @@ function confirmCreation() {
     alert("Sala criada com sucesso!");
     closeModal();
 }
+// Selecionar elementos do DOM
+const roomFormModal = document.getElementById("room-form-modal");
+
+// Função para abrir o formulário de criação de sala
+function openRoomForm() {
+    roomFormModal.classList.add("visible");
+}
+
+// Função para fechar o formulário de criação de sala
+function closeRoomForm() {
+    roomFormModal.classList.remove("visible");
+}
+
+// Adicionar evento ao botão SIM para abrir o formulário
+function confirmCreation() {
+    closeModal(); // Fecha o modal de confirmação
+    openRoomForm(); // Abre o formulário de criação
+}
+
+// Lógica de submissão do formulário
+document.getElementById("room-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Obter valores do formulário
+    const roomName = document.getElementById("room-name").value;
+    const maxStudents = document.getElementById("max-students").value;
+    const ageRange = document.getElementById("age-range").value;
+
+    // Exibir mensagem ou salvar dados
+    alert(`Sala "${roomName}" criada com sucesso!\nMáx. de alunos: ${maxStudents}\nFaixa etária: ${ageRange}`);
+    
+    // Fechar o formulário
+    closeRoomForm();
+});

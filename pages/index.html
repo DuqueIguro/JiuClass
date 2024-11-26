@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='..\style\style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='..\style\navbar.css'>
-    <script src='..\scripts\main.js'></script>
+    <script src='..\scripts\main.js' defer></script> <!-- Carrega o arquivo JavaScript após o carregamento completo da página -->
 </head>
 <body>
 
@@ -49,6 +49,26 @@
         </div>
     </div>
 </main>
+    <!-- Adicionando formulário de criação da sala -->
+<div id="room-form-modal" class="modal hidden">
+    <div class="form-content">
+        <button class="close-form" onclick="closeRoomForm()">✖</button>
+        <h3>Informações da Sala</h3>
+        <form id="room-form">
+            <label for="room-name">Nome da sala:</label>
+            <input type="text" id="room-name" name="room-name" required>
+            
+            <label for="max-students">Máx. de alunos:</label>
+            <input type="number" id="max-students" name="max-students" required>
+            
+            <label for="age-range">Faixa etária:</label>
+            <input type="text" id="age-range" name="age-range" required>
+            
+            <button type="submit" class="btn-create">CRIAR SALA</button>
+        </form>
+    </div>
+</div>
+
     
 </body>
 </html>
