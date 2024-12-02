@@ -5,11 +5,15 @@ const addButton = document.querySelector(".add-button");
 // Função para abrir o modal
 function openModal() {
     modal.classList.add("visible");
+    // while (condition) {
+        
+    // }
     addButton.classList.add("disable-animations"); // Desabilita animações
 }
 
 // Função para fechar o modal
 function closeModal() {
+    
     modal.classList.remove("visible");
     addButton.classList.remove("disable-animations"); // Reabilita animações
 }
@@ -34,8 +38,8 @@ function closeRoomForm() {
 
 // Adicionar evento ao botão SIM para abrir o formulário
 function confirmCreation() {
-    closeModal(); // Fecha o modal de confirmação
-    openRoomForm(); // Abre o formulário de criação
+    closeModal(); 
+    openRoomForm(); 
 }
 
 // Lógica de submissão do formulário
@@ -49,7 +53,7 @@ document.getElementById("room-form").addEventListener("submit", function (event)
 
     // Exibir mensagem ou salvar dados
     alert(`Sala "${roomName}" criada com sucesso!\nMáx. de alunos: ${maxStudents}\nFaixa etária: ${ageRange}`);
-    
+
     // Fechar o formulário
     closeRoomForm();
 });

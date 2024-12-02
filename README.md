@@ -56,3 +56,22 @@ Projeto de LDS
   ◆ Codigo postado no forum para auxilio externo para corrigir o problema do main.js no index.html. <br />
   ◆ Corrigir[Urgente]:Js permance sem ser executado. <br />
 </p>
+
+### Versão α-0.5.0 (26/11/2024)
+
+<p>
+  ◆ Correção do bug referente a não execução do JavaScript. <br />
+  ◆ Continuação do formulário para criação da sala. <br />
+  ◆ Criação de alguns Bugs a corrigir. <br />
+</p>
+
+### Versão α-0.6.0 (02/12/2024)
+
+<p>
+  ◆ Bug estetico na execução da animação. <br />
+  ◆ Criação de Bugs a corrigir. <br />
+  ◆ Conclusão téorica do banco de dados. <br />
+  ◆ Inclusão do arquivo do banco de dados. <br />
+
+  OBS: Usar função While para corrigir bug estetico e parar de executar a animação enquanto o modal etiver aberto
+</p>
