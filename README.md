@@ -75,3 +75,12 @@ Projeto de LDS
 
   OBS: Usar função While para corrigir bug estetico e parar de executar a animação enquanto o modal etiver aberto
 </p>
+
+### Versão α-0.7.0 (03/12/2024)
+
+<p>
+  ◆ Falha na correção do bug estetico sobre a animação do botão. <br />
+  ◆ Iniciado preparação e estudos para a implementação do banco de dados no codigo.<br />
+
+  OBS: A versão Beta está prestes a ser iniciada, porém  a versão Alfa não está concluída.<br />
+</p>
