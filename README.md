@@ -84,3 +84,10 @@ Projeto de LDS
 
   OBS: A versão Beta está prestes a ser iniciada, porém  a versão Alfa não está concluída.<br />
 </p>
+
+### Versão α-0.8.0 (10/12/2024)
+
+<p>
+  ◆ Tentativa inicial de implementar o Banco de dados no sistema. <br />
+  ◆ Implementação do node_modules ao codigo referente ao banco de dados. <br />
+</p>
