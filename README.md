@@ -91,3 +91,12 @@ Projeto de LDS
   ◆ Tentativa inicial de implementar o Banco de dados no sistema. <br />
   ◆ Implementação do node_modules ao codigo referente ao banco de dados. <br />
 </p>
+
+### Versão α-0.8.1 (16/12/2024)
+
+<p>
+  ◆ Analise de possíveis adptações do codigo, para tornar o banco de dados funcional. <br />
+
+  OBS: Usar o site a seguir para estudo e pesquisa: https://medium.com/@almeida.adriano/integrando-o-mysql-ao-nodejs-84dd5a9c8396<br />
+</p>
+
