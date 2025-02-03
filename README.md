@@ -100,3 +100,14 @@ Projeto de LDS
   OBS: Usar o site a seguir para estudo e pesquisa: https://medium.com/@almeida.adriano/integrando-o-mysql-ao-nodejs-84dd5a9c8396<br />
 </p>
 
+### Versão α-0.9.0 (03/02/2025)
+
+<p>
+  ◆ Tela Salas Iniciada. <br />
+  ◆ Tela Lista de Alunos Iniciada. <br />
+  ⇒◆ Imagens das faixas adicionadas. <br />
+  ◆ Tela Perfil Iniciada. <br />
+
+  OBS: Devido a uma complicação na implementação do banco de dados, o grupo decidiu fazer as salas sem o uso do banco de dados, sendo assim as paginas simples de prototipação basica.<br />
+</p>
+
