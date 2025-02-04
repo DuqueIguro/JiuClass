@@ -57,3 +57,8 @@ document.getElementById("room-form").addEventListener("submit", function (event)
     // Fechar o formulário
     closeRoomForm();
 });
+
+function toggleMenu() {
+    var menu = document.getElementById("menu-list");
+    menu.classList.toggle("active");
+}
