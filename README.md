@@ -13,9 +13,10 @@ Projeto de LDS
   ◆ Ω (Omega) = Versões do codigo referente a parte final do projeto, ajustes de pequenos detalhes, analise geral e lapidação do codigo, além das preparações para apresentar o projeto. <br />
 </p>
 
+## Versão Alfa iniciada
+
 ### Versão α-0.1.0 (12/11/2024)
 
-## Versão Alfa iniciada
 <p>
   ◆ O codigo foi adicionado ao GitHub. <br />
   ◆ Foi criado as paginas e pastas base. <br />
@@ -112,9 +113,10 @@ Projeto de LDS
   OBS: Devido a uma complicação na implementação do banco de dados, o grupo decidiu fazer as salas sem o uso do banco de dados, sendo assim as paginas simples de prototipação basica.<br />
 </p>
 
+## Versão Beta Iniciada
+
 ### Versão β-1.0.0 (09/02/2025)
 
-## Versão Beta Iniciada
 <p>
   ◆ Funçâo de criação de sala através de um falso banco de dados.<br />
 </p>
