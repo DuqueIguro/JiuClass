@@ -111,3 +111,9 @@ Projeto de LDS
   OBS: Devido a uma complicação na implementação do banco de dados, o grupo decidiu fazer as salas sem o uso do banco de dados, sendo assim as paginas simples de prototipação basica.<br />
 </p>
 
+### Versão α-0.1.0 (09/02/2025)
+
+<p>
+  ◆ Funçâo de criação de sala através de um falso banco de dados.<br />
+</p>
+

@@ -234,3 +234,33 @@
 #room-form .btn-create:hover {
     background-color: #087f03;
 }
+
+/* Container das salas */
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo das salas */
+.room-card {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.room-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.room-card p {
+    font-size: 18px;
+    color: #666;
+}

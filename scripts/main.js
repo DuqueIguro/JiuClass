@@ -1,30 +1,27 @@
 // Selecionar elementos do DOM
 const modal = document.getElementById("create-room-modal");
+const roomFormModal = document.getElementById("room-form-modal");
 const addButton = document.querySelector(".add-button");
+const roomContainer = document.getElementById("room-container");
+const noRoomsMessage = document.getElementById("no-rooms-message");
 
-// Função para abrir o modal
+// Função para abrir o modal de confirmação
 function openModal() {
     modal.classList.add("visible");
-    // while (condition) {
-        
-    // }
     addButton.classList.add("disable-animations"); // Desabilita animações
 }
 
-// Função para fechar o modal
+// Função para fechar o modal de confirmação
 function closeModal() {
-    
     modal.classList.remove("visible");
     addButton.classList.remove("disable-animations"); // Reabilita animações
 }
 
-// Função para confirmar criação da sala
+// Função para confirmar criação da sala e abrir o formulário
 function confirmCreation() {
-    alert("Sala criada com sucesso!");
     closeModal();
+    openRoomForm();
 }
-// Selecionar elementos do DOM
-const roomFormModal = document.getElementById("room-form-modal");
 
 // Função para abrir o formulário de criação de sala
 function openRoomForm() {
@@ -36,29 +33,43 @@ function closeRoomForm() {
     roomFormModal.classList.remove("visible");
 }
 
-// Adicionar evento ao botão SIM para abrir o formulário
-function confirmCreation() {
-    closeModal(); 
-    openRoomForm(); 
-}
-
-// Lógica de submissão do formulário
-document.getElementById("room-form").addEventListener("submit", function (event) {
+// Função para criar a sala e exibi-la na interface
+function createRoom(event) {
     event.preventDefault();
 
     // Obter valores do formulário
-    const roomName = document.getElementById("room-name").value;
+    const roomName = document.getElementById("room-name").value.trim();
     const maxStudents = document.getElementById("max-students").value;
     const ageRange = document.getElementById("age-range").value;
 
-    // Exibir mensagem ou salvar dados
-    alert(`Sala "${roomName}" criada com sucesso!\nMáx. de alunos: ${maxStudents}\nFaixa etária: ${ageRange}`);
+    if (roomName === "" || maxStudents === "" || ageRange === "") {
+        alert("Preencha todos os campos!");
+        return;
+    }
+
+    // Criar elemento da sala
+    const roomCard = document.createElement("div");
+    roomCard.classList.add("room-card");
+    roomCard.innerHTML = `
+        <h3>${roomName}</h3>
+        <p id="student-count">${maxStudents} Alunos</p>
+        <a href="listaAlunos.html">Lista de Alunos</a>
+    `;
+
+    // Adicionar sala ao container
+    roomContainer.appendChild(roomCard);
+
+    // Remover mensagem inicial caso seja a primeira sala
+    if (roomContainer.children.length > 0) {
+        noRoomsMessage.style.display = "none";
+    }
 
     // Fechar o formulário
     closeRoomForm();
-});
 
-function toggleMenu() {
-    var menu = document.getElementById("menu-list");
-    menu.classList.toggle("active");
+    // Resetar o formulário
+    document.getElementById("room-form").reset();
 }
+
+// Evento de submissão do formulário
+document.getElementById("room-form").addEventListener("submit", createRoom);
