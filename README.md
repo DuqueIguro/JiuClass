@@ -121,3 +121,10 @@ Projeto de LDS
   ◆ Funçâo de criação de sala através de um falso banco de dados.<br />
 </p>
 
+### Versão β-2.0.0 (12/02/2025)
+
+<p>
+  ◆ Novo Banco de Dados acrescentado para a gestão de Alunos.<br />
+  ◆ Estilização feita na nova tela (cerca de 20%).<br />
+</p>
+
