@@ -1,0 +1,47 @@
+  /* Centralização dos botões */
+.teste {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os botões */
+}
+
+/* Estilização geral dos botões */
+.btn {
+    background-color: #28bd52 !important; /* Verde-água */
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-danger { /* Excluir */
+    background-color: #ff4d4d !important; /* Vermelho forte */
+    border-color: #ff0000 !important;
+}
+
+.btn-info { /* Adicionar na Turma Mista */
+    background-color: #008080 !important; /* Verde-azulado */
+    border-color: #005757 !important;
+}
+
+.btn-info:hover {
+    background-color: #005757 !important;
+}
+
+/* Botões secundários com tom mais escuro */
+.btn-secondary {
+    background-color: #17a589 !important;
+}
+
+/* Efeito hover nos botões */
+.btn:hover {
+    background-color: #138d75 !important;
+    transform: scale(1.05);
+}
+.text-cyan {
+    color: rgb(9, 87, 255);
+}

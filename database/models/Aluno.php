@@ -45,16 +45,34 @@ class Aluno {
             $id
         ]);
     }
- //CONFIGURADO PARA DELETAR O ALUNO
+
+    // ✅ MÉTODO CORRIGIDO PARA EXCLUIR O ALUNO SEM ERRO DE CHAVE ESTRANGEIRA
     public function delete($id) {
         try {
-            $stmt1 = $this->conn->prepare("DELETE FROM turma_mista WHERE aluno_id = ?");
-            $stmt1->execute([$id]);
+            // Verifica se o aluno existe antes de excluir
+            $stmtCheck = $this->conn->prepare("SELECT id FROM aluno WHERE id = ?");
+            $stmtCheck->execute([$id]);
+            if ($stmtCheck->rowCount() === 0) {
+                throw new Exception("Aluno não encontrado!");
+            }
 
-            $stmt2 = $this->conn->prepare("DELETE FROM aluno WHERE id = ?");
-            return $stmt2->execute([$id]);
+            // Remove referências da tabela 'kids'
+            $stmtKids = $this->conn->prepare("DELETE FROM kids WHERE aluno_id = ?");
+            $stmtKids->execute([$id]);
+
+            // Remove referências da tabela 'turma_mista'
+            $stmtTurmaMista = $this->conn->prepare("DELETE FROM turma_mista WHERE aluno_id = ?");
+            $stmtTurmaMista->execute([$id]);
+
+            // Agora, exclui o aluno
+            $stmtAluno = $this->conn->prepare("DELETE FROM aluno WHERE id = ?");
+            if ($stmtAluno->execute([$id])) {
+                return true;
+            } else {
+                throw new Exception("Erro ao excluir aluno.");
+            }
         } catch (PDOException $e) {
-            return false;
+            die("Erro ao excluir: " . $e->getMessage());
         }
     }
 }

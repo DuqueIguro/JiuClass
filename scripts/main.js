@@ -1,3 +1,36 @@
+document.addEventListener("DOMContentLoaded", function () {
+    setupMenuToggle();
+    setupModalHandlers();
+    setupLogoRedirect();
+});
+
+// Alterna o menu suspenso ao clicar no ícone
+function setupMenuToggle() {
+    const menuIcon = document.querySelector(".menu-icon");
+    const menuList = document.querySelector("#menu-list");
+
+    menuIcon.addEventListener("click", function () {
+        menuList.classList.toggle("active");
+    });
+
+    // Fecha o menu ao clicar fora dele
+    document.addEventListener("click", function (event) {
+        if (!menuIcon.contains(event.target) && !menuList.contains(event.target)) {
+            menuList.classList.remove("active");
+        }
+    });
+}
+
+// Função para redirecionar ao clicar na logo
+function setupLogoRedirect() {
+    const logo = document.getElementById("logo");
+    if (logo) {
+        logo.addEventListener("click", function () {
+            window.location.href = "/jiuclass/pages/inicio.php";
+        });
+    }
+}
+
 // Selecionar elementos do DOM
 const modal = document.getElementById("create-room-modal");
 const roomFormModal = document.getElementById("room-form-modal");
@@ -6,35 +39,35 @@ const roomContainer = document.getElementById("room-container");
 const noRoomsMessage = document.getElementById("no-rooms-message");
 
 // Função para abrir o modal de confirmação
-function openModal() {
+window.openModal = function () {
     modal.classList.add("visible");
     addButton.classList.add("disable-animations"); // Desabilita animações
-}
+};
 
 // Função para fechar o modal de confirmação
-function closeModal() {
+window.closeModal = function () {
     modal.classList.remove("visible");
     addButton.classList.remove("disable-animations"); // Reabilita animações
-}
+};
 
 // Função para confirmar criação da sala e abrir o formulário
-function confirmCreation() {
+window.confirmCreation = function () {
     closeModal();
     openRoomForm();
-}
+};
 
 // Função para abrir o formulário de criação de sala
-function openRoomForm() {
+window.openRoomForm = function () {
     roomFormModal.classList.add("visible");
-}
+};
 
 // Função para fechar o formulário de criação de sala
-function closeRoomForm() {
+window.closeRoomForm = function () {
     roomFormModal.classList.remove("visible");
-}
+};
 
 // Função para criar a sala e exibi-la na interface
-function createRoom(event) {
+window.createRoom = function (event) {
     event.preventDefault();
 
     // Obter valores do formulário
@@ -53,7 +86,7 @@ function createRoom(event) {
     roomCard.innerHTML = `
         <h3>${roomName}</h3>
         <p id="student-count">${maxStudents} Alunos</p>
-        <a href="listaAlunos.html">Lista de Alunos</a>
+        <a href="/jiuclass/pages/listaalunos.php">Lista de Alunos</a>
     `;
 
     // Adicionar sala ao container
@@ -69,7 +102,7 @@ function createRoom(event) {
 
     // Resetar o formulário
     document.getElementById("room-form").reset();
-}
+};
 
 // Evento de submissão do formulário
 document.getElementById("room-form").addEventListener("submit", createRoom);

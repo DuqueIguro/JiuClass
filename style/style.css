@@ -264,3 +264,25 @@
     font-size: 18px;
     color: #666;
 }
+
+#menu-list {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style: none;
+}
+
+#menu-list.visible {
+    display: block; /* Mostra quando a classe "visible" é adicionada */
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}

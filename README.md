@@ -128,3 +128,12 @@ Projeto de LDS
   ◆ Estilização feita na nova tela (cerca de 20%).<br />
 </p>
 
+### Versão β-3.0.0 (13/02/2025)
+
+<p>
+  ◆ Páginas funcionando de forma corretamente.<br />
+  ◆ Estilização básica completada.<br />
+  ◆ Telas configuradas em PHP.<br />
+  ◆ Banco de dados recebendo os dados perfeitamente.<br />
+</p>
+

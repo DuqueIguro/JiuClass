@@ -10,12 +10,13 @@
 
 <nav id="nav">
         <div id="logo">
-            <img src="...\img\logo.png" alt="img">
+
+        <img src="/../jiuclass/img/logo.png" alt="img">
         </div>
         <h1>Gestão de Alunos</h1>
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <ul id="menu-list">
-            <li><a href="index.php">Início</a></li>
+            <li><a href="..\pages\inicio.php">Início</a></li>
             <li><a href="create.php">Adicionar Aluno</a></li>
             <li><a href="turma_mista_view.php">Turma Mista</a></li>
             <li><a href="kids_view.php">Turma Kids</a></li>
