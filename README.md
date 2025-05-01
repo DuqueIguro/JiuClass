@@ -24,11 +24,18 @@ O projeto segue uma nomenclatura de versões baseada em fases de desenvolvimento
 - **Delta (δ):** Testes e ajustes de funcionalidades.
 - **Ômega (Ω):** Finalização, ajustes finos e preparação para entrega.
 
-### Versão Atual: Beta (β-3.0.0)
-- Páginas funcionando corretamente.
-- Estilização básica completada.
-- Telas configuradas em PHP.
-- Banco de dados funcionando perfeitamente.
+### Versão Atual: Delta (δ-1.0.0)
+- Criação de uma versão profissional do README.
+- Organização das informações em seções:
+  - Visão Geral.
+  - Funcionalidades.
+  - Estrutura do Projeto.
+  - Histórico de Atualizações.
+  - Contribuições.
+  - Instalação.
+  - Contato.
+- Adição de instruções sobre instalação e configuração do projeto.
+- Inclusão de informações sobre o ciclo de vida do desenvolvimento (Alfa, Beta, Delta e Ômega).
 
 ## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias e correções.
